@@ -1,0 +1,16 @@
+F5 - debug
+shift + F5 - stop debugging
+F9 - break point on/off
+ctrl + / - 주석 처리, 해제
+F12 - 커서있는 함수/변수가 선언된 위치로 커서 이동
+F2 - Change the Symbol name
+
+Explore bar
+Ctrl + Shift + E
+
+하단 패널 껏다 키기 - Crtl + J
+왼쪽 사이드바 껏다 키기 - Ctrl + B
+
+자동정렬 - Ctrl + A -> Ctrl + K +F
+
+빠른 파일열기 - Ctrl + P

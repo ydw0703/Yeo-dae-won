@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Enjoy Your Life</title>
+   <meta charset="utf-8">
+   <link rel="styleheet" href="style.css">
+   <style>
+    a {
+      color: black;
+      text-decoration: none;
+      }
+
+    h1 {
+      font-size: 500%;
+      border-width: 5px;
+      border-bottom: 1px gray solid;
+      padding: 10px;
+      margin-bottom: 0px;
+      text-align: center;
+      font-style: italic;
+      color: mediumspringgreen;
+       }
+
+      /* a= 선택자(selector) */
+      /* 모르면 관련 키워드를 google에 쳐봐 ex) css text size, css font size Etc. */
+      /* CSS에서는 효과(property)와 선택자(selector)가 중요하다. */
+    .saw {
+      color: gray;
+         }
+    #active {
+      color: red;
+        }
+    #grid {
+      display:grid;
+      grid-template-columns: 150px 1fr;
+      padding: 8px;
+      margin: 0px;
+       }
+    #grid ol {
+      border-right:1px gray solid;
+       }
+    #ydw{
+      margin: 10px; 
+      margin-top: 0px;     
+       }
+    /* . = class의 saw태그 것들만 적용, # = ID선택자를 적용 (우선순위는 ID가 더 높음)  */
+    </style>
+    <!--<style></style>안에 내용들은 모두 CSS이다.-->
+    <!-- CSS를 쓰는 이유는? HTML이 내용에 집중할 수 있도록 하기 위해서.
+                          방대한 내용에 대하여 CSS가 더 효율적이라서  -->
+</head>
+  <body style="background-color: cornflowerblue; color: crimson;">
+    <h1><a href="index.html">WEB</a></h1>
+      <input id="night_day" type="button" value="clickme" onclick="
+        if(this.value === 'night') {
+          document.querySelector('body').style.backgroundColor ='black'
+          document.querySelector('body').style.color='white'
+          document.querySelector('#night_day').value = 'day'
+          }
+        else {
+          document.querySelector('body').style.backgroundColor ='white'
+          document.querySelector('body').style.color='black'
+          document.querySelector('#night_day').value  = 'night'
+          }
+      ">
+      <div id="grid">
+        <ol>
+          <li><a href="1.html" class="saw">HTML</a></li>
+          <li><a href="2.html" class="saw active" style="color:red; text-decoration: underline;">CSS</a></li>
+          <!-- 위의 style은 html속성이지만 css를 불러온다고 약속한다. -->
+          <!-- class = html의 속성, grouping 하다라는 뜻 -->
+          <li><a href="3.html">JavaScript</a></li>
+        </ol>
+      <div id="ydw">    
+    <h2>HTML</h2>
+      <p>hello world
+        <a href="https://www.youtube.com/channel/UChbE5OZQ6dRHECsX0tEPEZQ" , target="_blank" title="장삐쭈">장삐쭈형</a>
+        <strong><u>This</u> part is very important</strong>
+        <p>긜짝긜짝딀쯱딀쯱홍쯱빵쯱쮸뿡뿌빵긜짝긜짝딀쯱딀쯱홍쯱빵쯱쮸뿡뿌빵긜짝
+        긜짝딀쯱딀쯱홍쯱빵쯱쮸뿡뿌빵긜짝긜짝딀쯱딀쯱홍쯱빵쯱쮸뿡뿌빵긜짝긜짝
+        딀쯱딀쯱홍쯱빵쯱쮸뿡뿌빵긜짝긜짝딀쯱딀쯱홍쯱빵쯱쮸뿡뿌빵긜짝긜짝딀쯱
+        딀쯱홍쯱빵쯱쮸뿡뿌빵긜짝긜짝딀쯱딀쯱홍쯱빵쯱쮸뿡뿌빵긜짝긜짝딀쯱딀쯱
+        홍쯱빵쯱쮸뿡뿌빵긜짝긜짝딀쯱딀쯱홍쯱빵쯱쮸뿡뿌빵긜짝긜짝딀쯱딀쯱홍쯱
+        빵쯱쮸뿡뿌빵긜짝긜짝딀쯱딀쯱홍쯱빵쯱쮸뿡뿌빵긜짝긜짝딀쯱딀쯱홍쯱빵쯱
+        쮸뿡뿌빵긜짝긜짝딀쯱딀쯱홍쯱빵쯱쮸뿡뿌빵긜짝긜짝딀쯱딀쯱홍쯱빵쯱쮸뿡
+        뿌빵
+      </p>
+      </p>
+      </div>
+
+    <!-- html의 확장자는 .html  -->
+    <!-- TAG의 종류 -->
+    <!-- <strong></strong> = 진하게 -->
+    <!-- <u></u> = 밑줄 -->
+    <!-- <h1></h1> = 헤드, 줄바꿈, 크기, 진하게 등 (1~6까지 밖에 없음) -->
+    <!-- <br> = 줄바꿈  -->
+    <!-- <p></p> = 단락 -->
+    <!-- <img src> = 사진 삽입 TAG -->
+      </div>
+      <img src="https://images.unsplash.com/photo-1508277119692-771239379ff9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+        width="40%">
+    <!-- <li></li> = 목록 태크 -->
+    <!-- <ul></ul>(unordered list) = <li></li>의 부모태그 -->
+    <!-- <ol></ol>(ordered list) = 숫자 자동 체크 태그 -->
+    <!-- <title></title> = 책 표지와 같은 정보, 명시적인 제목을 알 수 있고
+     검색 엔진 최적화에도 필수! -->
+    <!-- <meta charset="utf-8"> - utf-8은 코딩을 0,1로 저장해서 웹에 
+    나타내는 방식의 하나로, 설정을 해주어야 웹에서 적용이 된다.  -->
+    <!-- <a></a> = link걸기, <a href="링크주소", target="_blank" title="장삐쭈"></a> -->
+  </body>
+</html>
